@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsc",
-    "start:dev": "nodemon"
+    "start:dev": "nodemon",
+    "sass": "node-sass -w src/styles/ -o css/"
   },
   "author": "",
   "license": "ISC",
