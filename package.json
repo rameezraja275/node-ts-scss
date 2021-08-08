@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsc",
     "start:dev": "nodemon",
-    "sass": "node-sass -w src/styles/ -o css/"
+    "sass": "node-sass -w src/styles/ -o css/",
+    "dev": "concurrently --kill-others \"npm run start:dev\" \"npm run sass\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^16.4.13",
+    "concurrently": "^6.2.1",
     "nodemon": "^2.0.12",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
