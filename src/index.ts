@@ -11,7 +11,7 @@ const students: Array<IStudent> = [{
     age: 27,
     
 }, {
-    name: "ahmad",
+    name: "ahmad", 
     age: 30
 }];
 
